@@ -62,6 +62,7 @@ body {
   padding: 18px;
   min-width: 250px;
   overflow-x: hidden;
+  border-right: 0.2px solid white;
   display: flex;
   flex-direction: column;
   overflow: hidden;

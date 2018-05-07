@@ -13,7 +13,7 @@ const server = http.createServer(app);
 const io = require('socket.io').listen(server);
 
 if (module.parent) {
-  module.exports = server;
+  module.exports = server; // this is for test suite
 } else {
   server.listen(port, () => console.log(`listening on port ${port}`));
 }

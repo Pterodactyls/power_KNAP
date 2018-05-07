@@ -6,6 +6,7 @@ const server = require('../server/index.js');
 const supertest = require('supertest');
 const testRequest = supertest.agent(server);
 const sampleGoogleProfile = require('./sampleGoogleProfile.js');
+const db = require('../database/postgres.js');
 
 
 describe('** Node / Express server **', function() {
@@ -124,3 +125,27 @@ describe('** React client app **', function() {
     });
   });
 }); // end React client tests
+
+describe('** Postgres / Sequelize database set-up **', function() {
+  describe('...', function () {
+    it('should...', function (done) {
+      expect(1).to.equal(0);
+    });
+  });
+});
+
+describe('** Postgres / Sequelize database integration **', function() {
+  describe('...', function () {
+    it('should ...', function (done) {
+      expect(1).to.equal(0);
+    });
+  });
+});
+
+describe('** React client **', function() {
+  describe('...', function () {
+    it('should...', function (done) {
+      expect(1).to.equal(0);
+    });
+  });
+});
